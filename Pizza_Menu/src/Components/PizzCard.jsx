@@ -1,7 +1,7 @@
 import "./PizzCard.css";
 import pizzaData from "./data";
 function PizzCard() {
-  console.log(pizzaData);
+  // console.log(pizzaData);
   return (
     <>
       {pizzaData.map((pizzEl, index) => {

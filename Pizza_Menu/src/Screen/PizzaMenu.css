@@ -2,17 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+p {
+  font-size: 1rem;
 }
 
 main {
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
   background-color: #414141;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto Mono", sans-serif;
+
   color: #fff;
 }
 
@@ -23,6 +28,11 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.heading {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
 }
 
 .pizzContainer {
@@ -43,6 +53,7 @@ main {
   justify-content: center;
   width: 100%;
   gap: 5px;
+  padding-bottom: 20px;
 }
 
 .btn {

@@ -7,7 +7,7 @@ function PizzaMenu() {
       <main>
         <div className="hero-heading">
           <h2>- FAST REACT PIZZA CO. -</h2>
-          <h3>OUR MENU</h3>
+          <h3 className="heading">OUR MENU</h3>
           <p>
             Authentic Italian cuisine. 6 creative dishes to choose from. All
             from our stone oven, all organic, all delicious.
