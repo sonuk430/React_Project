@@ -1,0 +1,27 @@
+.Add-form {
+  align-items: center;
+  background-color: #e5771f;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  padding: 2.8rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-right: 1.6rem;
+}
+
+button,
+input,
+select {
+  background-color: #ffebb3;
+  border: none;
+  border-radius: 10rem;
+  color: #5a3e2b;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.2rem 3.2rem;
+}
