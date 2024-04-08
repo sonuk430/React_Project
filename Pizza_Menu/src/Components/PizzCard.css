@@ -1,0 +1,38 @@
+.pizzCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 350px;
+  gap: 15px;
+}
+
+.pizzCard img {
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 150px;
+}
+
+.pizzCardSold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 350px;
+  gap: 15px;
+  opacity: 0.5;
+}
+
+.pizzCardSold img {
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 150px;
+}
+
+.pezaContaint {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  gap: 5px;
+}
