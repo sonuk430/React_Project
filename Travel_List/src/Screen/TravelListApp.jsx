@@ -11,7 +11,22 @@ function TravelListApp() {
     setItems((items) => [...items, item]);
   }
 
-  console.log(items);
+//  handleToggleItem
+  function handleToggleItem(id) {
+    setItems((items) =>
+      items.map((item) =>
+        item.id === id ? { ...item, packed: !item.packed } : item
+      )
+    );
+  }
+
+  //   handleDeleteItem
+
+  function handleDeleteItem(id) {
+    setItems((items) => items.filter((item) => item.id !== id));
+  }
+
+  // console.log(items);
   return (
     <>
       <header>
@@ -19,7 +34,7 @@ function TravelListApp() {
       </header>
       <AddForm onAddItems={handleAddItems} />
       {/* send the items Array in List Componet For rendring */}
-      <List items = {items}  />
+      <List items = {items}    onToggleItem={handleToggleItem}  onDeleteItem={handleDeleteItem} />
     </>
   );
 }
