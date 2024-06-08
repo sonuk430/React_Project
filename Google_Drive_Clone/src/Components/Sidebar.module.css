@@ -1,0 +1,46 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 16rem;
+  height: fit-content;
+  background-color: rgb(233 238 246);
+  /* border: solid; */
+  gap: 25px;
+}
+
+.sidebar .sidebarBtn button {
+  background: transparent;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 2px #ccc;
+  margin-left: 20px;
+  span {
+    font-size: 16px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+}
+
+.sidebar .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebarContent {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 90%;
+  gap: 10px;
+  height: 2rem;
+  border-radius: 1rem;
+  padding-left: 10px;
+  background-color: rgb(113, 151, 201);
+}

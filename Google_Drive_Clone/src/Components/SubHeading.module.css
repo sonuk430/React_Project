@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: medium;
+  font-weight: bold;
+  /* border: solid; */
+  width: 100%;
+}

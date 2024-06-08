@@ -1,0 +1,19 @@
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  /* border: solid; */
+  padding: 15px;
+}
+.heading .btnDiv {
+  display: flex;
+  gap: 1rem;
+}
+
+.heading button {
+  width: 6rem;
+  border-radius: 2.5rem;
+  border: none;
+  padding: 3px;
+}
