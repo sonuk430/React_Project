@@ -1,6 +1,7 @@
-import Header from '../Components/Header';
-import Sidebar from '../Components/Sidebar';
-import WorkPlace from '../Components/WorkPlace';
+import Header from "../Components/Header/Header"
+import Sidebar from "../Components/SideBar/Sidebar"
+import WorkPlace from "../Components/WorkPlace/WorkPlace"
+
 import style from './HomeSceen.module.css';
 const HomeSceen = () => {
     const homePageContentFit = {
@@ -8,6 +9,8 @@ const HomeSceen = () => {
     }
     return (
         <>
+
+
             <div className={style.home}>
                 <Header />
                 <div style={homePageContentFit}>
@@ -15,6 +18,7 @@ const HomeSceen = () => {
                     <WorkPlace />
                 </div>
             </div>
+
         </>
     )
 }
