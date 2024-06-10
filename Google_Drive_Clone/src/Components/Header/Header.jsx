@@ -4,6 +4,14 @@ import TuneIcon from '@mui/icons-material/Tune';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 const Header = () => {
+
+    const logout = () => {
+        localStorage.clear()
+        window.location.reload()
+    }
+
+
+
     return (
         <>
             <div className={style.header}>
@@ -21,7 +29,7 @@ const Header = () => {
                 <div className={style.headerRight}>
                     <button> <SettingsIcon /></button>
                     <button> <HelpOutlineIcon /></button>
-                    <span><img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="userLogo" /></span>
+                    <button onClick={logout}><span><img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="userLogo" /></span></button>
                 </div>
             </div>
         </>

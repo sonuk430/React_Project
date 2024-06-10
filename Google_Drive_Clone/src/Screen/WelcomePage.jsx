@@ -1,11 +1,12 @@
 import style from './WelcomePage.module.css';
+const WelcomePage = ({ singnIn }) => {
 
-const WelcomePage = () => {
     return (
-        <div className={style.wel}>WelcomePage
-
-            <ul className='sonu'><li></li>List</ul>
-        </div>
+        <>
+            <div>
+                <button onClick={singnIn}>Login App</button>
+            </div>
+        </>
     )
 }
 

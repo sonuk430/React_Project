@@ -1,13 +1,38 @@
+import { useEffect, useState } from "react";
+import { auth, provider } from "./Components/firebase/firebase";
 import HomeSceen from "./Screen/HomeSceen"
 import WelcomePage from "./Screen/WelcomePage"
 
 
 function App() {
 
+  const [user, setUser] = useState(null);
+
+  const singnIn = () => {
+    auth.signInWithPopup(provider).then(({ user }) => {
+      setUser(user.email)
+      localStorage.setItem("email", user.email)
+    }).catch(error => {
+      alert(error.massage);
+    })
+  }
+
+  useEffect(() => {
+    setUser(localStorage.getItem("email"))
+  }, []);
+
+  console.log(user);
+
+
+
   return (
     <>
-      {/* <WelcomePage /> */}
-      <HomeSceen />
+
+      {
+        user ? <HomeSceen /> : <WelcomePage singnIn={singnIn} />
+      }
+
+
     </>
   )
 }
