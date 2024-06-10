@@ -1,28 +1,26 @@
-import style from './DataListType.module.css';
-const DataListType = () => {
+import style from "./DataListType.module.css";
+
+const DataListType = ({ files, formatBytes }) => {
+    console.log(files);
+
     return (
         <>
             <div className={style.dataListType}>
-                <ul>
-                    <li>Sonu.jpg</li>
-                    <li>600.0 KB</li>
-                    <li>09-06-2024</li>
-                </ul>
 
-                <ul>
-                    <li>Sonu.jpg</li>
-                    <li>600.0 KB</li>
-                    <li>09-06-2024</li>
-                </ul>
-
-                <ul>
-                    <li>Sonu.jpg</li>
-                    <li>600.0 KB</li>
-                    <li>09-06-2024</li>
-                </ul>
+                {files.map((element) => (
+                    <ul key={element.id}>
+                        <a href={element.data.fileURL} target="black">
+                            <li>{element.data.filename}</li>
+                        </a>
+                        <li>{formatBytes(element.data.size)}</li>
+                        <li>
+                            {new Date(element.data.timestamp?.seconds * 1000).toUTCString()}
+                        </li>
+                    </ul>
+                ))}
             </div>
         </>
-    )
-}
+    );
+};
 
-export default DataListType
+export default DataListType;
