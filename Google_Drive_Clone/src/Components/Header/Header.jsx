@@ -3,14 +3,18 @@ import SearchIcon from '@mui/icons-material/Search';
 import TuneIcon from '@mui/icons-material/Tune';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-const Header = () => {
+import { useState } from 'react';
+const Header = ({ user }) => {
 
+    const [searchFileName, setsearchFileName] = useState([]);
+
+    // this function for the logout in the app.
     const logout = () => {
         localStorage.clear()
         window.location.reload()
     }
 
-
+    console.log(user);
 
     return (
         <>
@@ -29,7 +33,7 @@ const Header = () => {
                 <div className={style.headerRight}>
                     <button> <SettingsIcon /></button>
                     <button> <HelpOutlineIcon /></button>
-                    <button onClick={logout}><span><img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="userLogo" /></span></button>
+                    <button onClick={logout}><span><img src={user.photoURL} alt="userLogo" /></span></button>
                 </div>
             </div>
         </>

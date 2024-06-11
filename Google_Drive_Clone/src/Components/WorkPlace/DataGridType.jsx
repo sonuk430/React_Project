@@ -11,7 +11,7 @@ const DataGridType = ({ files, formatBytes }) => {
                     files.map((element) => (
                         <ul key={element.id}>
                             <a href={element.data.fileURL} target="black">
-                                <li>{element.data.filename}</li>
+                                <li className={style.name}>{element.data.filename}</li>
                             </a>
                             <FolderOpenOutlinedIcon />
                             <li>{formatBytes(element.data.size)}</li>

@@ -8,9 +8,11 @@ function App() {
 
   const [user, setUser] = useState(null);
 
+  // this function for user login in app.
   const singnIn = () => {
     auth.signInWithPopup(provider).then(({ user }) => {
-      setUser(user.email)
+      setUser(user)
+      // console.log(user);
       localStorage.setItem("email", user.email)
     }).catch(error => {
       alert(error.massage);
@@ -21,15 +23,13 @@ function App() {
     setUser(localStorage.getItem("email"))
   }, []);
 
-  console.log(user);
-
 
 
   return (
     <>
 
       {
-        user ? <HomeSceen /> : <WelcomePage singnIn={singnIn} />
+        user ? <HomeSceen user={user} /> : <WelcomePage singnIn={singnIn} />
       }
 
 

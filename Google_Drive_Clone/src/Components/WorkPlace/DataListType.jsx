@@ -1,7 +1,6 @@
 import style from "./DataListType.module.css";
 
 const DataListType = ({ files, formatBytes }) => {
-    console.log(files);
 
     return (
         <>

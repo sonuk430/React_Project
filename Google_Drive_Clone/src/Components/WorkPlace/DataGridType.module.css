@@ -4,10 +4,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   gap: 1rem;
   padding-top: 10px;
-  /* border: solid; */
 }
 
 .dataGridType ul {
@@ -17,8 +15,11 @@
   justify-content: space-around;
   height: 13rem;
   width: 15rem;
-  background-color: aquamarine;
+  background-color: var(--secondary-color);
   border-radius: 0.5rem;
+}
+.dataGridType :hover {
+  background-color: var(--hover-color);
 }
 
 .dataGridType ul svg {

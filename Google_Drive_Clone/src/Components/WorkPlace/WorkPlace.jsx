@@ -10,7 +10,22 @@ import { db } from "../firebase/firebase";
 const WorkPlace = () => {
     const [files, setFiles] = useState([]);
 
+    const [showList, setShowList] = useState(true);
+
+
+    function handleshowList() {
+        setShowList(true)
+    }
+
+    function handleshowGrid() {
+        setShowList(false)
+    }
+
+
+
+
     useEffect(() => {
+        // this function is collect the app snapshot from firebase and storing the data in files
         db.collection("myfiles").onSnapshot((snapshot) => {
             setFiles(
                 snapshot.docs.map((doc) => ({
@@ -35,11 +50,18 @@ const WorkPlace = () => {
     return (
         <>
             <div className={style.workPlace}>
-                <Heading />
+                <Heading handleshowList={handleshowList} handleshowGrid={handleshowGrid} />
+
                 <SubHeading />
-                <WorkPlaceImg />
-                <DataListType files={files} formatBytes={formatBytes} />
-                <DataGridType files={files} formatBytes={formatBytes} />
+                {
+                    files.length === 0 ? <WorkPlaceImg /> : ""
+                }
+
+                {
+                    showList ? <DataListType files={files} formatBytes={formatBytes} /> : <DataGridType files={files} formatBytes={formatBytes} />
+                }
+
+
             </div>
         </>
     );
