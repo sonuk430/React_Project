@@ -1,8 +1,22 @@
-# React + Vite
+# Google Drive Clone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Google Drive clone project built using React.js. The project uses Firebase for data storage and authentication, including Google login.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication using Google Sign-In
+- File upload and storage using Firebase Storage
+- Display and manage files
+
+## Technologies Used
+
+- React.js
+- Firebase (Authentication, Firestore, Storage)
+- Material-UI for icons and components
+- CSS Modules for styling
+
+## UI
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
