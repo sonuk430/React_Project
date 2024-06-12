@@ -68,8 +68,8 @@ const Sidebar = ({ handleOpen }) => {
                 </div>
 
                 <div className={style.box1}>
-                    <progress size="tiny" value="50" max="100" />
-                    <span>105 GB of 200 GB used</span>
+                    <progress size="tiny" value="0" max="1" />
+                    <span>0 KB of 100 MB</span>
                 </div>
             </div>
         </>

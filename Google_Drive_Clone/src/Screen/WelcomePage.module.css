@@ -1,23 +1,25 @@
 .login {
   position: relative;
-  background-color: var(--secondary-color);
+  /* background-color: ; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  /* border: solid green; */
 }
 
 .loginBox {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 20rem;
-  width: 35rem;
+  width: 90%;
   color: gray;
   border-radius: 1rem;
+  height: fit-content;
+  /* border: solid orange; */
 }
 .loginBox h2 {
   padding: 20px;
@@ -30,6 +32,7 @@
   top: 0;
   height: 45px;
   width: 100%;
+  /* border: solid; */
 }
 
 .header img {
@@ -40,6 +43,36 @@
 .header h2 {
   color: gray;
   padding: 10px;
+}
+
+.loginBox .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  height: 70%;
+  width: 40%;
+  /* border: solid; */
+}
+
+.loginBox .content p {
+  font-size: 1.5rem;
+}
+
+.loginBox .content h1 {
+  font-size: 3rem;
+}
+
+.loginBox .imgBox {
+  height: fit-content;
+  width: 60%;
+  overflow: hidden;
+  /* border: solid; */
+}
+
+.loginBox .imgBox img {
+  height: 100%;
+  width: 100%;
 }
 
 .button {

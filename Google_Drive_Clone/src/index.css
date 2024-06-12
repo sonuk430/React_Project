@@ -14,3 +14,17 @@
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+a,
+li {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+button {
+  cursor: pointer;
+}
+
+body.dark {
+  --color-background: #1f2023;
+  --color-foreground: #efefef;
+}

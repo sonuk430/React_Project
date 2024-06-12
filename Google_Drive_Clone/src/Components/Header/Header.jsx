@@ -4,6 +4,7 @@ import TuneIcon from '@mui/icons-material/Tune';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import { useState } from 'react';
+import LightAndDarkMode from './LightAndDarkMode';
 const Header = ({ user }) => {
 
     const [searchFileName, setsearchFileName] = useState([]);
@@ -31,8 +32,9 @@ const Header = ({ user }) => {
                     </div>
                 </div>
                 <div className={style.headerRight}>
-                    <button> <SettingsIcon /></button>
-                    <button> <HelpOutlineIcon /></button>
+                    <LightAndDarkMode />
+                    {/* <button> <SettingsIcon /></button> */}
+                    {/* <button> <HelpOutlineIcon /></button> */}
                     <button onClick={logout}><span><img src={user.photoURL} alt="userLogo" /></span></button>
                 </div>
             </div>
