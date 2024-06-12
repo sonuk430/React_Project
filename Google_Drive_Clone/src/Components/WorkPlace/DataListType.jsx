@@ -13,7 +13,13 @@ const DataListType = ({ files, formatBytes }) => {
                         </a>
                         <li>{formatBytes(element.data.size)}</li>
                         <li>
-                            {new Date(element.data.timestamp?.seconds * 1000).toUTCString()}
+                            {
+                                new Date(element.data.timestamp?.seconds * 1000).toLocaleDateString('en-US', {
+                                    day: '2-digit',
+                                    month: '2-digit',
+                                    year: 'numeric'
+                                })
+                            }
                         </li>
                     </ul>
                 ))}
