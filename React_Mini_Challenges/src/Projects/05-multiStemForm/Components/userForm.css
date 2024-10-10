@@ -1,0 +1,39 @@
+.FormContainer {
+  height: 300px;
+  width: 20rem;
+  background-color: rgb(107, 30, 30);
+  border-radius: 10px;
+  padding: 0 30px;
+}
+.FormContainer form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.FormContainer form label {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.FormContainer form input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.FormContainer form button {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
